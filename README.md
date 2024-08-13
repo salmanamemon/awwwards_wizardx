@@ -37,7 +37,7 @@ Discover how GSAP-powered animations bring life to web elements, a common featur
 As a seasoned Full Stack Developer, I pride myself on creating digital experiences that not only look beautiful but also deliver high performance and usability. This portfolio is a testament to my expertise in building sites that win accolades.
 
 # Visit My Portfolio:
-Salman Aziz - Full Stack Developer
+Salman Aziz - Full Stack Developer - https:salmanaziz.net
 
 # View the Code Demo:
-Code Demo - Wizardz
+Code Demo - Wizardz - httsp://wizardz.salmanaziz.net
