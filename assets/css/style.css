@@ -21,7 +21,6 @@ section{
 main{
     position: relative;
     z-index: 0;
-    padding-bottom: 30%;
     background-color: #fff;
     overflow-x:hidden ;
 }
@@ -376,14 +375,6 @@ padding-top: 20px;
     width: 100%;
     padding: 0 5%;
 }
-footer{
-    position: fixed;
-    z-index: -1;
-    width: 99.1%;
-    left: 0;
-    bottom: 0;
-    padding: 0 5%;
-}
 .footer-inner {
     background-color: #1a1a1a;
     padding: 40px;
@@ -687,10 +678,10 @@ footer{
     .footer-contact p:last-child {
         width: 100%;
     }
-    .wrapper{
-        padding-bottom:100px
-    }
-    main {
-        padding-bottom: 100%;
+}
+
+@media only screen and (max-width: 490px) {
+    .section1 {
+        min-height: 880px;
     }
 }

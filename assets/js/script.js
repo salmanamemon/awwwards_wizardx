@@ -38,20 +38,20 @@ function bannerAnimation(){
 var mediaQuery = window.matchMedia("(max-width: 767px)");
 
 function servicesAnimation(){
-    if(mediaQuery.matches) {
-        var tl2 = gsap.timeline({
-            scrollTrigger:{
-                trigger: ".section3 .sec-heading",
-                scroller: "body",
-                //markers:true,
-                start: "top bottom-=1",
-                end: "bottom top+=1",
-                scrub:1,
-            }
-        });
-        console.log("mobile working");
-    }
-    else{
+    // if(mediaQuery.matches) {
+    //     var tl2 = gsap.timeline({
+    //         scrollTrigger:{
+    //             trigger: ".section3 .sec-heading",
+    //             scroller: "body",
+    //             //markers:true,
+    //             start: "top bottom-=1",
+    //             end: "bottom top+=1",
+    //             scrub:1,
+    //         }
+    //     });
+    //     console.log("mobile working");
+    // }
+    // else{
         var tl2 = gsap.timeline({
             scrollTrigger:{
                 trigger: ".brands",
@@ -63,20 +63,20 @@ function servicesAnimation(){
             }
         });
         console.log("desk working");
-    }
+    //}
     tl2.from(".section3 .services-part1", {
         y:30,
         opacity:0,
     })
-    if(mediaQuery.matches) {
-        tl2.from(".section3 .box", {
-            x:-300,
-            opacity:0,
-            duration:0.5,
-            stagger:0.15
-        })
-    }
-    else{
+    // if(mediaQuery.matches) {
+    //     tl2.from(".section3 .box", {
+    //         x:-300,
+    //         opacity:0,
+    //         duration:0.5,
+    //         stagger:0.15
+    //     })
+    // }
+    // else{
         // Row 1 Animation
         tl2.from(".box.row1.animLeft", {
             x:-300,
@@ -111,7 +111,7 @@ function servicesAnimation(){
             duration:0.5
         }, "anim2")
     }
-}
+//}
 
 function ctaAnimation(){
     var tl3 = gsap.timeline({
@@ -202,11 +202,12 @@ function teamSection(){
     }, "cardR2")
 }
 bannerAnimation();
+if(!mediaQuery.matches) {
 servicesAnimation()
 ctaAnimation()
 accordianSection()
 teamSection()
-
+}
 /* MENU ANIMATION */
 var tlNav = gsap.timeline();
 tlNav.to(".mobile-v .part2", {
@@ -233,4 +234,19 @@ menu.addEventListener('click', function() {
 var close = document.querySelector('.menu-close');
 close.addEventListener('click', function() {
     tlNav.reverse();
+});
+
+var tlfoo = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".section7",
+        scroller: "body",
+        // markers:true,
+        start: "bottom bottom",
+        end: "bottom bottom",
+        scrub: 1,
+    }
+});
+tlfoo.from(".footer", {
+    y: 400,
+    opacity:0,
 });

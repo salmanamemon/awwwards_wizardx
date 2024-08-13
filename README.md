@@ -1,4 +1,4 @@
-# 🌟 Award-Winning 3D Portfolio for SalmanAziz.Tech
+# 🌟 Award-Winning WizardZ by SalmanAziz.Tech
 ##  Introduction
 I'm Salman Aziz, a Full Stack Developer with over 11 years of experience, recognized for creating award-winning websites. Based in the UAE, I specialize in crafting minimalistic, clean, and highly functional web designs that stand out in the industry.
 
