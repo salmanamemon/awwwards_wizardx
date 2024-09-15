@@ -236,17 +236,17 @@ close.addEventListener('click', function() {
     tlNav.reverse();
 });
 
-var tlfoo = gsap.timeline({
-    scrollTrigger:{
-        trigger: ".section7",
-        scroller: "body",
-        // markers:true,
-        start: "bottom bottom",
-        end: "bottom bottom",
-        scrub: 1,
-    }
-});
-tlfoo.from(".footer", {
-    y: 400,
-    opacity:0,
-});
+// var tlfoo = gsap.timeline({
+//     scrollTrigger:{
+//         trigger: ".section7",
+//         scroller: "body",
+//         // markers:true,
+//         start: "bottom bottom",
+//         end: "bottom bottom",
+//         scrub: 1,
+//     }
+// });
+// tlfoo.from(".footer", {
+//     y: 400,
+//     opacity:0,
+// });
