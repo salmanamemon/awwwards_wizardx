@@ -138,8 +138,8 @@ function accordianSection(){
             trigger: ".section5",
             scroller: "body",
             //markers:true,
-            start: "top 300px",
-            end: "bottom center",
+            start: "top bottom",
+            end: "bottom bottom",
             scrub: 1,
         }
     });
@@ -160,8 +160,8 @@ function teamSection(){
         scrollTrigger:{
             trigger: ".section6",
             scroller: "body",
-            start: "top center",
-            end: "top 80",
+            start: "top bottom",
+            end: "bottom bottom",
             //markers: true,
             scrub:1,
         }
